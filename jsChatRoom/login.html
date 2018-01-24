@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Log In</title>
+    </head>
+    <body>
+        <form action="http://127.0.0.1:8000/process_get" method="GET" style="background-color:burlywood; width:300px;height:500px">
+            <div style="text-align:center;position:absolute;top:80px;left:40px;height:100px;width:220px">
+            <h1>FSE CHATROOM</h1>
+
+        </div>
+                <div style="position:absolute;top:220px;left:35px">
+                    <label for = "username">username：</label>
+                    <input type = "text"  name ="username" required>
+                </div>
+                <div style="position:absolute;top:260px;left:37px">
+                    <label for = "password">password：</label>       
+                    <input type = "password"  name = "password" required>
+                </div>
+                <div style="position:absolute;top:350px;left:100px">
+                    <input type="submit" value="Log In" id="loginButton">
+                </div>
+        </form>
+        <form action="http://127.0.0.1:8000/process_reg" method="GET">
+                <div style="position:absolute;top:350px;left:170px">
+                    <input type="submit" value="Sign up" id="signupButton">
+                </div>
+       </form>  
+        
+       <!--<form action="http://127.0.0.1:8080/process_get" method="GET">
+            First Name: <input type="text" name="username">  <br>
+             
+            Last Name: <input type="text" name="password">
+            <input type="submit" value="login">
+            </form>-->
+        <script src="login.js">
+        </script>
+    </body>
+</html>

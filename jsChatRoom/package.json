@@ -1,0 +1,13 @@
+{
+    "name": "jsChatRoom",
+    "description": "a realtime web application",
+    "main": "server.js",
+    "dependencies": {
+        "express": "4.1.x",
+        "socket.io": "1.2.x"
+    },
+    "engines": {
+        "node": "6.3.0",
+        "npm": "3.10.3"
+    }
+}

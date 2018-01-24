@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>ChatRoom</title>
+    </head>
+   <body>
+       <div id="container" style="width:300px;height:500px;background-color:bisque">
+           <div id="header" style="background-color:aqua;width:300px;height:20px">
+               <b style="margin-bottom:0cm;text-align:left;color:black;font-size:15">FSE Chat Room</b>
+               <div onclick="window.close()" style="background-color:orange;width:60px;height:20px;float:right;text-align:center">
+                <button>CLOSE</button>
+                </div>
+               
+           </div>
+           <div style="position:absolute;top:40px;left:35px;background-color:white;width:240px;height:250px;overflow:scroll">
+               <div id="historyMsg" ></div>
+           </div>
+           <div>
+               <input type = 'text'style="position:absolute;top:300px;left:35px;background-color:white;width:240px;height:100px" id="msgbox">
+           </div>
+           <div>
+               <button style="position:absolute;top:420px;left:125px;width:50px;background-color:grey;text-align:center" id="sendmsg">post</button>
+           </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="chat.js"></script>
+   </body>
+</html>
